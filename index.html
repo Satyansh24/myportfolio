@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satyansh Kumar Singh | Full Stack Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Satyansh Kumar Singh - Full Stack Developer, AI/ML Enthusiast (B.Tech CSE @ KIET), C++ DSA Problem Solver & SEO Strategist."
+    />
+
+    <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-top-left"></div>
+    <div class="ambient-glow glow-center-right"></div>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#about" class="nav-logo">Satyansh<span>.</span></a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link active-link">About Us</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- ==================== 1. HERO / ABOUT SECTION ==================== -->
+      <section class="about section" id="about">
+        <div class="container about-container">
+          <!-- Left: Profile Image with Purple Aura -->
+          <div class="about-image-wrapper">
+            <div class="purple-aura"></div>
+            <div class="about-img-box">
+              <!-- Apni photo ko folder me 'profile.jpg' naam se save karein -->
+              <img
+                src="profile.jpg"
+                onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80'
+                "
+                alt="Satyansh Kumar Singh"
+                id="profileImage"
+                class="about-img"
+              />
+            </div>
+
+            <!-- Live Photo Preview Changer Button (Optional for testing) -->
+            <label
+              for="uploadPhoto"
+              class="photo-upload-pill"
+              title="Test your own photo live"
+            >
+              <i class="ri-camera-switch-line"></i> Preview Your Photo
+              <input type="file" id="uploadPhoto" accept="image/*" hidden />
+            </label>
+          </div>
+
+          <!-- Right: Hero Text & Bio -->
+          <div class="about-content">
+            <div class="role-badge">
+              <span class="pulse-dot"></span> Full Stack Developer &bull; AI/ML
+              &bull; C++ DSA
+            </div>
+
+            <h1 class="hero-title">
+              <span class="text-gradient">Creativity</span><br />
+              Is My Passion
+            </h1>
+
+            <p class="about-description">
+              I'm <strong>Satyansh Kumar Singh</strong>, a Full Stack
+              <span class="highlight">developer and designer</span> pursuing
+              <strong>B.Tech in CSE (AI &amp; ML)</strong> at
+              <strong>KIET Deemed to be University</strong>. Passionate about
+              experimenting with new
+              <span class="highlight">skills and creativity</span>, I build
+              scalable AI web apps like <strong>StudyPilot</strong> &amp;
+              <strong>Recursy.in</strong>, solve 300+ algorithmic problems in
+              C++, and scale digital platforms.
+            </p>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn-glow">
+                <span>Resume</span>
+                <i class="ri-file-list-3-line"></i>
+              </a>
+              <a href="#projects" class="btn-secondary">
+                Explore Projects <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 2. PROJECTS SECTION ==================== -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <h2 class="section-title">
+            I Make Incredible<br />
+            <span class="text-gradient">Projects</span>
+          </h2>
+
+          <!-- Horizontal Draggable / Scrollable Cards -->
+          <div class="projects-slider" id="projectsSlider">
+            <!-- Project 01 -->
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-num">01</span>
+                <span class="project-tag">AI Web App</span>
+              </div>
+              <h3 class="project-title">
+                StudyPilot – AI Study Planner Ecosystem
+              </h3>
+              <p class="project-tech-label">Technologies used</p>
+              <p class="project-tech-list">
+                HTML, CSS, JavaScript, React, Gemini AI API, Node.js and Vercel.
+              </p>
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                  alt="StudyPilot AI App"
+                />
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-num">02</span>
+                <span class="project-tag">Full Stack &amp; DSA</span>
+              </div>
+              <h3 class="project-title">
+                Recursy.in &amp; 300-Problem DSA Blueprint
+              </h3>
+              <p class="project-tech-label">Technologies used</p>
+              <p class="project-tech-list">
+                Next.js, C++, 52 Algorithmic Patterns, Tailwind CSS, Git &amp;
+                GitHub.
+              </p>
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+                  alt="Recursy DSA Platform"
+                />
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-num">03</span>
+                <span class="project-tag">Web Tools</span>
+              </div>
+              <h3 class="project-title">
+                AI Background Remover &amp; 100-File ZIP Converter
+              </h3>
+              <p class="project-tech-label">Technologies used</p>
+              <p class="project-tech-list">
+                HTML5 Canvas, Vanilla JS, JSZip API, Vision AI API and Dark UI.
+              </p>
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+                  alt="AI Image Tools"
+                />
+              </div>
+            </article>
+
+            <!-- Project 04 -->
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-num">04</span>
+                <span class="project-tag">SEO &amp; IoT</span>
+              </div>
+              <h3 class="project-title">
+                MyTechyGuide.in &amp; Smart Arduino Irrigation
+              </h3>
+              <p class="project-tech-label">Technologies used</p>
+              <p class="project-tech-list">
+                WordPress, Ahrefs SEO, C++ Arduino, Soil Moisture Sensor &amp;
+                5V Relay.
+              </p>
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                  alt="IoT and SEO Project"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 3. WORK EXPERIENCE & EDUCATION ==================== -->
+      <section class="experience section" id="experience">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="text-gradient">My Work</span><br />
+            Experience
+          </h2>
+
+          <!-- Toggle Pill Switcher -->
+          <div class="exp-tabs-wrapper">
+            <div class="exp-tabs">
+              <button class="exp-tab active" data-target="#work-panel">
+                Experience <i class="ri-briefcase-4-line"></i>
+              </button>
+              <button class="exp-tab" data-target="#edu-panel">
+                Education <i class="ri-graduation-cap-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Panel 1: Work Experience -->
+          <div class="timeline-panel active" id="work-panel">
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">Full Stack<br />Developer</h3>
+                <span class="timeline-company"
+                  >StudyPilot &amp; Recursy.in</span
+                >
+              </div>
+              <div class="timeline-year">Now</div>
+              <div class="timeline-right">
+                <p>
+                  Architecting full-stack web ecosystems for CS students
+                  including AI study planners, smart summaries, interactive
+                  quizzes, and a 300-problem DSA tracker across 52 patterns.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">Web Tool<br />Creator</h3>
+                <span class="timeline-company">Open Source &amp; Web Apps</span>
+              </div>
+              <div class="timeline-year">2026</div>
+              <div class="timeline-right">
+                <p>
+                  Developed high-speed client-side web utilities including a
+                  100-image JPG-to-PNG batch converter with dynamic ZIP
+                  packaging and an AI Image Background Remover.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">SEO &amp; Web<br />Optimization</h3>
+                <span class="timeline-company"
+                  >MyTechyGuide.in &amp; Jagohindi</span
+                >
+              </div>
+              <div class="timeline-year">2025</div>
+              <div class="timeline-right">
+                <p>
+                  Leading full-scale technical SEO audits with Ahrefs, WordPress
+                  architecture, custom domain management via BigRock, and
+                  organic search optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Education -->
+          <div class="timeline-panel" id="edu-panel">
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">B.Tech CSE<br />(AI &amp; ML)</h3>
+                <span class="timeline-company"
+                  >KIET Deemed to be University</span
+                >
+              </div>
+              <div class="timeline-year">Now</div>
+              <div class="timeline-right">
+                <p>
+                  Specializing in Artificial Intelligence &amp; Machine
+                  Learning, Data Structures and Algorithms in C++, Full Stack
+                  Development, and Arduino hardware-software prototyping.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">
+                  Intermediate<br />(Class XII - PCM)
+                </h3>
+                <span class="timeline-company">UP Board</span>
+              </div>
+              <div class="timeline-year">2025</div>
+              <div class="timeline-right">
+                <p>
+                  Completed Higher Secondary Education with Physics, Chemistry,
+                  and Mathematics (PCM), building strong analytical and
+                  problem-solving fundamentals.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="timeline-left">
+                <h3 class="timeline-role">
+                  High School<br />(Class X - 92.3%)
+                </h3>
+                <span class="timeline-company">UP Board</span>
+              </div>
+              <div class="timeline-year">2023</div>
+              <div class="timeline-right">
+                <p>
+                  Graduated with Distinction scoring 92.3% overall,
+                  demonstrating academic excellence in Mathematics, Science, and
+                  Computer fundamentals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 4. WHAT I OFFER (SERVICES) ==================== -->
+      <section class="services section" id="services">
+        <div class="container">
+          <h2 class="section-title">
+            What I <span class="text-gradient">Offer</span>
+          </h2>
+
+          <div class="offer-grid">
+            <!-- Card 1: Developer -->
+            <div class="offer-card corner-top-left active" id="devOfferCard">
+              <h3 class="offer-title">Developer</h3>
+              <p class="offer-desc">
+                Website creation with HTML, CSS, JavaScript. Professional
+                full-stack applications with React, Next.js, Node JS, C++ DSA
+                logic, and lots of creativity.
+              </p>
+
+              <div class="offer-details">
+                <p class="skills-heading">Skills &amp; Tools</p>
+                <div class="skills-pills">
+                  <span class="skill-pill">HTML</span>
+                  <span class="skill-pill">CSS</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">React</span>
+                  <span class="skill-pill">Next Js</span>
+                  <span class="skill-pill">Node Js</span>
+                  <span class="skill-pill">C++ DSA</span>
+                  <span class="skill-pill">GitHub</span>
+                  <span class="skill-pill">Vercel</span>
+                  <span class="skill-pill">Arduino</span>
+                </div>
+              </div>
+
+              <button class="offer-toggle-btn" aria-label="Toggle Skills">
+                <i class="ri-arrow-up-s-line"></i>
+              </button>
+            </div>
+
+            <!-- Card 2: Design & SEO -->
+            <div class="offer-card corner-top-right" id="designOfferCard">
+              <h3 class="offer-title">Design &amp; SEO</h3>
+              <p class="offer-desc">
+                Modern dark-neon UI/UX design, interactive web tools, technical
+                SEO audits with Ahrefs, and high-converting WordPress platforms
+                at their best.
+              </p>
+
+              <div class="offer-details">
+                <p class="skills-heading">Skills &amp; Tools</p>
+                <div class="skills-pills">
+                  <span class="skill-pill">UI/UX Design</span>
+                  <span class="skill-pill">Figma</span>
+                  <span class="skill-pill">Ahrefs SEO</span>
+                  <span class="skill-pill">WordPress</span>
+                  <span class="skill-pill">BigRock DNS</span>
+                  <span class="skill-pill">Responsive UI</span>
+                  <span class="skill-pill">Content Strategy</span>
+                </div>
+              </div>
+
+              <button class="offer-toggle-btn" aria-label="Toggle Skills">
+                <i class="ri-arrow-down-s-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 5. TESTIMONIALS (WHAT THEY SAY) ==================== -->
+      <section class="testimonials section">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="text-gradient">What They Say</span><br />
+            About Me
+          </h2>
+
+          <div class="testi-grid">
+            <!-- Card 1 -->
+            <article class="testi-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+                alt="Saubhagya Gupta"
+                class="testi-avatar"
+              />
+              <h3 class="testi-name">Saubhagya Gupta</h3>
+              <div class="testi-rating">
+                <i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i>
+                <span>5.0</span>
+              </div>
+              <p class="testi-text">
+                Collaborating with Satyansh on our Arduino Smart Irrigation
+                System was seamless. He handled C++ microcontroller logic and
+                sensor calibration with round-the-clock dedication.
+              </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="testi-card">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+                alt="Sarthak Raj Mishra"
+                class="testi-avatar"
+              />
+              <h3 class="testi-name">Sarthak Raj Mishra</h3>
+              <div class="testi-rating">
+                <i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i>
+                <span>5.0</span>
+              </div>
+              <p class="testi-text">
+                StudyPilot and Recursy.in have completely transformed how we
+                revise and track DSA patterns. His dark-themed UI design and
+                full-stack execution are top-notch.
+              </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="testi-card">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                alt="Saras"
+                class="testi-avatar"
+              />
+              <h3 class="testi-name">Saras</h3>
+              <div class="testi-rating">
+                <i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i><i class="ri-star-line"></i
+                ><i class="ri-star-line"></i>
+                <span>5.0</span>
+              </div>
+              <p class="testi-text">
+                Satyansh offers easy-to-use web tools and rock-solid frontend
+                architecture, with hard work and round-the-clock support on all
+                college and freelance projects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 6. CONTACT ME SECTION ==================== -->
+      <section class="contact section" id="contact">
+        <div class="container contact-container">
+          <h2 class="section-title contact-heading">Contact Me</h2>
+          <p class="contact-subtitle">Tell me about your next project.</p>
+
+          <!-- Glowing Copy Email Button -->
+          <button
+            class="btn-glow copy-email-btn"
+            id="copyEmailBtn"
+            data-email="contact.satyansh2005@email.com"
+          >
+            <span id="copyBtnText"
+              >Copy Email <i class="ri-file-copy-line"></i
+            ></span>
+          </button>
+
+          <div class="contact-columns">
+            <!-- Column 1 -->
+            <div class="contact-col">
+              <div class="contact-group">
+                <h3 class="contact-label">Email</h3>
+                <p class="contact-value" id="emailDisplay">
+                  contact.satyansh2005@email.com
+                </p>
+              </div>
+              <div class="contact-group">
+                <h3 class="contact-label">Location</h3>
+                <p class="contact-value">Ghaziabad, UP, India</p>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="contact-col">
+              <h3 class="contact-label">Social Media</h3>
+              <ul class="contact-links">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/satyansh-singh-80aa99410/"
+                    target="_blank"
+                    rel="noopener"
+                    >Linkedin <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com" target="_blank" rel="noopener"
+                    >GitHub <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://mytechyguide.in"
+                    target="_blank"
+                    rel="noopener"
+                    >MyTechyGuide <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#projects"
+                    >Recursy.in <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="contact-col">
+              <h3 class="contact-label">Write Me &amp; We'll Talk</h3>
+              <ul class="contact-links">
+                <li>
+                  <a href="https://wa.me/" target="_blank" rel="noopener"
+                    >WhatsApp <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://t.me/" target="_blank" rel="noopener"
+                    >Telegram <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/satyansh__24/"
+                    target="_blank"
+                    rel="noopener"
+                    >Instagram <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:contact.satyansh2005@email.com"
+                    >Direct Mail <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p class="footer-copy">
+          All Rights Reserved By <span>Satyansh Kumar Singh</span>
+        </p>
+        <p class="footer-year">&copy; 2026</p>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
